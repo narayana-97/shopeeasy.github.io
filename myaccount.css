@@ -1,0 +1,44 @@
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  
+  
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+
+  }
+ #title{
+    font-family: 'Rubik Vinyl', cursive,sans-serif;
+    
+ }
+ .t{
+    color:whitesmoke;
+    font-size: 26px;
+
+ }
+ #menu{
+    
+font-family: 'Zilla Slab', sans-serif;
+ }
+.pos{
+    margin-top: 30px;
+    width: 100%;  
+    
+}

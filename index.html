@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik+Dirt&family=Rubik+Vinyl&family=Zilla+Slab:ital,wght@1,600&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="cart.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" type="text/css" hCref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     
+     
+
+
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+                <ul>
+                    <li id="title"><a class="t" href="index.html">SHOP  MADE  EASY</a></li>
+                    <li><a href="index.html"<i class="fa-brands fa-solid fa-shopify fa-2xl" style="color: #ffffff; margin-top:14px;"></i></a></li>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;            
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Shop</a></li>
+                    <select name="formal" id="menu" onChange="window.location.href=this.value" style=" height: 30px; margin-top:15px;">
+
+                        <option value="electronics.html">ELECTRONICS</option>
+                        <option value="mens.html">MEN'S COLLECTION</option>
+                        <option value="women.html">WOMEN'S COLLECTION</option>
+                        <option value="kids.html">KID'S WEAR</option>
+                    </select>
+                    &nbsp; &nbsp; &nbsp;
+                    <input type="text" placeholder="Search.." class="search-bar" name="search" style=" height: 29px; margin-top:15px; width:19%;">&nbsp;
+                    <button type="submit" style=" height: 30px;width:35px; margin-top:14px;"><i class="fa fa-search"></i></button>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;            
+                    <li><a href="myaccount.html"><i class="fa-solid fa-user  fa-2xl" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-cart-shopping  fa-2xl" style="color: #ffffff;"></i></a></li> -->
+
+                    <div class="box" style="height: 20px ;width:30px;">
+                        <div class="cart-count">0</div>
+                        <ion-icon name="cart" id="cart-icon" ></ion-icon>
+                    </div>
+                </ul> 
+       
+    
+                <div class="cart">
+                    <div class="cart-title">Cart Items</div>
+                    <div class="cart-content">
+                </div>
+        
+        
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+
+                <button class="btn-buy"><a href="payment.html" style="text-decoration: none; color:#ffffff">Place Order</a></button>
+
+
+                <ion-icon name="close" id="cart-close"></ion-icon>
+
+            </div>
+        </div> 
+    </header>
+    
+        <!-- <ul>
+            <li id="title"><a class="t" href="index.html"><span>SHOP  MADE  EASY</span></a></li>
+            <li><a href="index.html"<i class="fa-brands fa-solid fa-shopify fa-2xl" style="color: #ffffff; margin-top:14px;"></i></a></li>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;            
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="electronics.html">Shop</a></li>
+            <select name="formal" id="menu" onChange="window.location.href=this.value" style=" height: 30px; margin-top:15px;">
+
+                <option value="electronics.html">ELECTRONICS</option>
+                <option value="mens.html">MEN'S COLLECTION</option>
+                <option value="women.html">WOMEN'S COLLECTION</option>
+                <option value="kids.html">KID'S WEAR</option>
+            </select>
+            &nbsp; &nbsp; &nbsp;
+            <input type="text" placeholder="Search.." class="search-bar" name="search" style=" height: 29px; margin-top:15px; width:19%;">&nbsp;
+            <button type="submit" style=" height: 30px; margin-top:14px;"><i class="fa fa-search"></i></button>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;            
+            <li><a href="myaccount.html"><i class="fa-solid fa-user  fa-2xl" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping  fa-2xl" style="color: #ffffff;"></i></a></li>
+
+            <!-- --------------- -->
+
+            <!-- <div class="cart" style="background-color: #e11414;">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+            </div>
+    
+    
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+
+            <button class="btn-buy"><a href="payment.html" style="text-decoration: none; color:#ffffff">Place Order</a></button>
+
+
+            <ion-icon name="close" id="cart-close"></ion-icon> -->
+
+            <!-- ----------------
+            </ul> 
+                --- -->
+     
+    <!-- <div class="sticky"></div> -->
+
+    <div class="div1">
+        <div class="div2">
+            <h3>
+
+                <pre class="glow">
+                    Our products bring together the finest materials and stunning design to create something very special.
+
+                    We believe in quality, care, and creating unique products that everyone can enjoy. 
+
+                    Colorful, creative, and inspired by what we see everyday, each product represents what we love about
+
+                    the world we live in.We hope they'll inspire you too.
+                </pre>
+            </h3>
+            </div>
+            
+        <div class="div3 fglow button_style">
+            <h1>GET FLAT 50% OFF ON YOUR FIRST ORDER</h1><br><br>
+            <h4> <a href="#packages">Explore Us</a></h4>
+        </div>
+        
+      
+    
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+  <hr>
+    <section class="our-packages" id="packages">
+        <h1 class="h1">ELECTRONICS</h1>
+        <div>
+            <figure>
+                <a href="electronics.html"> <img src="computer-img.png" alt="" height="400px"></a>
+                <figcaption>Desktops</figcaption>
+                <figcaption> Starting From &#8377; 20,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="electronics.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+            </figure>
+            <figure>
+                <a href="electronics.html"><img src="laptop-img.png" alt="" height="400px"></a>
+                <figcaption>Laptops</figcaption>
+                <figcaption>Starting From &#8377; 30,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="electronics.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+            </figure>
+            <figure>
+                <a href="electronics.html"><img src="mobile-img.png" alt="" height="400px"></a>
+                <figcaption>Mobiles</figcaption>
+                <figcaption>Starts From&#8377; 10,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="electronics.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+            </figure>
+        </div>
+        <hr>
+
+        <!-- MENS -->
+
+        <h1 class="h1">MEN'S  WEAR</h1>
+        <div class="men">
+            <figure>
+                <a href="mens.html"><img src="mens0.jpg" alt="" height="400px"></a>
+                <figcaption>FORMALS</figcaption>
+                <figcaption> Starting From &#8377; 2,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="mens.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+
+            </figure>
+            <figure>
+                <a href="mens.html"><img src="mens01.jpg" alt="" height="400px"></a>
+                <figcaption>WESTERN</figcaption>
+                <figcaption>Starting From &#8377; 3,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="mens.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+
+            </figure>
+            <figure>
+                <a href="mens.html"><img src="mens03.jpg" alt="" height="400px"></a>
+                <figcaption>TRADITIONAL</figcaption>
+                <figcaption>Starts From&#8377; 4,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="mens.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+            </figure>
+        </div>
+        <hr>
+
+        <!-- WOMENS -->
+
+        <h1 class="h1">WOMEN'S WEAR</h1>
+        <div class="women">
+            <figure>
+                <a href="women.html"> <img src="women1.jpg" alt="" height="400px"></a>
+                <figcaption>WESTERN</figcaption>
+                <figcaption> Starting From &#8377; 3,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="women.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+                
+            </figure>
+            <figure>
+                <a href="women.html"><img src="women02.jpg" alt="" height="400px"></a>
+                <figcaption>MIDDLE WEST</figcaption>
+                <figcaption>Starting From &#8377; 4,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="women.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+                
+            </figure>
+            <figure>
+                <a href="women.html"> <img src="WOMEN03.jpg" alt="" height="400px"></a>
+                <figcaption>TRADITIONAL</figcaption>
+                <figcaption>Starts From&#8377; 10,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="women.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+                
+            </figure>
+        </div>
+        <hr>
+
+        <!-- KIDS -->
+
+        <h1 class="h1">KID'S WEAR</h1>
+        <div class="kids">
+            <figure>
+                <a href="kids.html"><img src="kids1.jpg" alt="" height="400px"></a>
+                <figcaption>Babie's Wear</figcaption>
+                <figcaption> Starting From &#8377; 5,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="kids.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+                
+            </figure>
+            <figure>
+                <a href="kids.html"><img src="kids2.png" alt="" height="400px"></a>
+                <figcaption>Girl's Wear</figcaption>
+                <figcaption>Starting From &#8377; 3,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="kids.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+
+            </figure>
+            <figure>
+                <a href="kids.html"><img src="kids4.png" alt="" height="400px"></a>
+                <figcaption>Boy's Wear</figcaption>
+                <figcaption>Starts From&#8377; 1,000</figcaption>
+                <button class="btn btn-outline-primary"><a href="kids.html" style="text-decoration: none;color:blue">Shop Now</a></button>
+                
+            </figure>
+        </div>
+        <hr>
+        
+    </section>
+   <!-- ----------footer--------------- -->
+    
+
+
+   <footer class="footer">
+    <div class="containers">
+        <div class="rows">
+            <div class="footer-col">
+                <h4 style="margin-left: 110px;">company</h4>
+                <ol>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ol>
+            </div>
+            <div class="footer-col">
+                <h4 style="margin-left: 110px;">get help</h4>
+                <ol>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="/payment.html">payment options</a></li>
+                </ol>
+            </div>
+            <div class="footer-col">
+                <ol>
+                    <h4 style="margin-left: 60px;">online shop</h4>
+                    <li><a href="/electronics.html">ELECTRONICS</a></li>
+                    <li><a href="/mens.html">MEN</a></li>
+                    <li><a href="/women.html">WOMEN</a></li>
+                    <li><a href="/kids.html">KIDS</a></li>
+                </ol>
+            </div>
+            <div class="footer-col">
+                <div class="social-links" style="width: 500px;">
+                    <h4 style="margin-left: 60px;">follow us</h4>
+                    <a href="https://www.facebook.com/nimalapudi.narayana/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/nimalapudi9398"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCaO5iHZFoJEUUu1tYBnKjwA"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/lakshmi-narayana-nimmalapudi-67b826251/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Narayana21"><i class="fab fa-github"></i></a>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+   
+   <!-- --------footer end--- -->
+    
+ <script src="script.js"></script>
+ <script src="cart.js"></script>
+</body>
+</html>
